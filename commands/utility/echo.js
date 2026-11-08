@@ -8,7 +8,7 @@ module.exports = {
 
     async execute(interaction) {
         const message = interaction.options.getString('message');
-        await interaction.reply({ content: 'Submitted!', flags: MessageFlags.Ephemeral });
+        await interaction.reply({ content: 'Sent!', flags: MessageFlags.Ephemeral });
         await interaction.channel.send(`${message}`);
     }
 }
